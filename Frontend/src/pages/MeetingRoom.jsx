@@ -315,6 +315,25 @@ function MeetingRoom() {
     setTimeout(() => setToasts((prev) => prev.filter(t => t.id !== id)), 3000);
   };
 
+  const handleCopyLink = async () => {
+    const url = `${window.location.origin}/meeting/${meetingId}`;
+    const message = `To join the video meeting, click this link: ${url} \n\nOr join manually using Meeting ID: ${meetingId}`;
+  
+    try {
+      await navigator.clipboard.writeText(message);
+      addToast('Invitation message copied');
+    } catch {
+      // Fallback for older browsers
+      const textarea = document.createElement('textarea');
+      textarea.value = message;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      addToast('Invitation message copied');
+    }
+  };  
+
   useEffect(() => {
     showChatRef.current = showChat;
   }, [showChat]);
@@ -339,7 +358,7 @@ function MeetingRoom() {
           <h2 className="meeting-title">Meeting: {meetingId}</h2>
           <span className="meeting-time">12:34 PM</span>
         </div>
-        <button className="copy-link-btn">
+        <button className="copy-link-btn" onClick={handleCopyLink} title="Copy meeting link">
           <Copy size={18} />
           Copy Link
         </button>
