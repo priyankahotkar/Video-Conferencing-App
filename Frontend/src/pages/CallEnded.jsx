@@ -6,6 +6,8 @@ function CallEnded() {
   const navigate = useNavigate();
   const location = useLocation();
   const meetingId = location.state?.meetingId || 'Unknown';
+  const duration = location.state?.duration || '—';
+  const participants = location.state?.participants || 1;
 
   const handleReturnHome = () => {
     navigate('/');
@@ -34,11 +36,11 @@ function CallEnded() {
           </div>
           <div className="summary-item">
             <span className="summary-label">Duration:</span>
-            <span className="summary-value">15 minutes</span>
+            <span className="summary-value">{duration}</span>
           </div>
           <div className="summary-item">
             <span className="summary-label">Participants:</span>
-            <span className="summary-value">3 people</span>
+            <span className="summary-value">{participants} {participants === 1 ? 'person' : 'people'}</span>
           </div>
         </div>
         <div className="feedback-section">
