@@ -567,7 +567,6 @@ function MeetingRoom() {
               </div>
             ))}
           </div>
-          
         )}
         <div className="controls-left">
           <span className="meeting-id-badge">ID: {meetingId}</span>
