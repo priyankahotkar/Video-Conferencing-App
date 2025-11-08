@@ -14,7 +14,7 @@ const User = require('./Models/User');
 const app = express();
 connectDB();
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5173', 'https://video-conferencing-app-one-coral.vercel.app'];
 
 const corsOptions = {
     origin: (origin, callback) => {
