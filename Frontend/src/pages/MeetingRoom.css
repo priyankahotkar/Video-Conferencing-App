@@ -439,6 +439,13 @@
   background-color: #d33426;
 }
 
+.ellipsis {
+  display: none;
+}
+.options {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -492,5 +499,32 @@
 
   .control-icon {
     font-size: 1.25rem;
+  }
+
+  .controls-center {
+    position: relative;
+  }
+
+  .controls-center .ellipsis {
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
+
+  .controls-center .options {
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background-color: #3c4043;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.2s, transform 0.2s;
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 10;
   }
 }
