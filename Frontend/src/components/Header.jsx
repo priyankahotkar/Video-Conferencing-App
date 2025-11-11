@@ -26,7 +26,7 @@ function Header() {
       <div className="header-container">
         <Link to="/" className="logo">
           <Video className="logo-icon" size={28} strokeWidth={2.5} />
-          <span className="logo-text">VideoMeet</span>
+          <span className="logo-text">Vynce</span>
         </Link>
         <button className="mobile-toggle" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={22} /> : <Menu size={22} />}

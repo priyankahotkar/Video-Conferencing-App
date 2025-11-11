@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <h3 className="footer-title">VideoMeet</h3>
+          <h3 className="footer-title">Vynce</h3>
           <p className="footer-description">
             Connect with anyone, anywhere. Premium video conferencing made simple.
           </p>
@@ -47,7 +47,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {currentYear} VideoMeet. All rights reserved.</p>
+        <p>&copy; {currentYear} Vynce. All rights reserved.</p>
         <div className="footer-legal">
           <a href="#privacy">Privacy Policy</a>
           <span className="separator">|</span>

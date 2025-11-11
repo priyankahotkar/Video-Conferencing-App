@@ -274,7 +274,7 @@ function MeetingRoom() {
         localStreamRef.current.getTracks().forEach(t => t.stop());
       }
       try { navigator.mediaDevices.removeEventListener('devicechange', updateAudioDeviceName); } catch (e) { /* ignore */ }
-      document.title = 'VideoMeet';
+      document.title = 'Vynce';
     };
   }, [meetingId, user]);
 

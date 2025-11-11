@@ -35,7 +35,7 @@ export default function Register() {
           <UserPlus size={22} style={{ color: '#1a73e8' }}/>
           <h2 className="auth-title" style={{ color: '#1a73e8' }}>Create your account</h2>
         </div>
-        <p className="auth-subtitle">Join VideoMeet to start hosting and joining meetings</p>
+        <p className="auth-subtitle">Join Vynce to start hosting and joining meetings</p>
         <form onSubmit={onSubmit} className="auth-form">
           <div className="auth-input-group">
             <User size={16} className="auth-input-icon" />

@@ -34,7 +34,7 @@ export default function Login() {
           <LogIn size={22} style={{ color: '#1a73e8' }}/>
           <h2 className="auth-title" style={{ color: '#1a73e8' }}>Welcome back</h2>
         </div>
-        <p className="auth-subtitle">Sign in to continue to VideoMeet</p>
+        <p className="auth-subtitle">Sign in to continue to Vynce</p>
         <form onSubmit={onSubmit} className="auth-form">
           <div className="auth-input-group">
             <Mail size={16} className="auth-input-icon" />

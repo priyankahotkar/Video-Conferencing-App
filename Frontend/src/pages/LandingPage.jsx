@@ -54,7 +54,7 @@ function LandingPage() {
       </section>
 
       <section className="features-section">
-        <h2 className="section-title">Why Choose VideoMeet?</h2>
+        <h2 className="section-title">Why Choose Vynce?</h2>
         <div className="features-grid">
           <div className="feature-card">
             <Zap className="feature-icon" size={40} strokeWidth={1.5} />
